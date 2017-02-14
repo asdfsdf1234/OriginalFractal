@@ -1,6 +1,6 @@
 public void setup() {
 	size(800, 600);
-	background(125);
+	background(0);
 }
 
 public void draw() {
@@ -27,12 +27,12 @@ public void fractal(float x, float y, float z)
 	}
 	else 
 	{
-		fill(255,Math.Random())
-		fractal(x, y+z/3, z/3);
+		fill(255);
+		fractal(x, y, z/3);
 		fractal(x+z/3, y, z/3);	
 		fractal(x+2*z/3, y+z/3, z/3);
 		fractal(x+z/3, y+2*z/3, z/3);	
-
+		fractal(x, y+2*z/3, z/3);
 		
 	}
 	
